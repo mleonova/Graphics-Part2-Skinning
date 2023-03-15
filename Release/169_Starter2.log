@@ -1,0 +1,9 @@
+﻿  Camera.cpp
+  Cube.cpp
+  main.cpp
+  shader.cpp
+  Tokenizer.cpp
+  Window.cpp
+  Generating Code...
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification
+  169_Starter2.vcxproj -> C:\Users\marga\Documents\Visual Studio 2019\cse169\169_Starter2\Release\169_Starter2.exe

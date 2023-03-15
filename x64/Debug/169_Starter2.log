@@ -1,0 +1,20 @@
+﻿  Camera.cpp
+  Cube.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_glfw.cpp
+  imgui_impl_opengl3.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  Joint.cpp
+  main.cpp
+  shader.cpp
+  Skeleton.cpp
+  Skin.cpp
+  Tokenizer.cpp
+  Vertex.cpp
+  Window.cpp
+  Generating Code...
+  LINK : C:\Users\marga\Downloads\169_Starter2\x64\Debug\169_Starter2.exe not found or not built by the last incremental link; performing full link
+  169_Starter2.vcxproj -> C:\Users\marga\Downloads\169_Starter2\x64\Debug\169_Starter2.exe
