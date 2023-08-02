@@ -93,4 +93,7 @@ After performing the skinning, the program renders the character's animated mesh
 
 ## Demo
 
+<video src="skinning_demo.mp4" controls title="Skinning Demo 1"></video>
+
+<video src="skinning_demo2.mp4" controls title="Skinning emo 2"></video>
 
