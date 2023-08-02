@@ -93,7 +93,11 @@ After performing the skinning, the program renders the character's animated mesh
 
 ## Demo
 
-<video src="skinning_demo.mp4" controls title="Skinning Demo 1"></video>
+https://github.com/mleonova/Graphics-Part2-Skinning/assets/30246711/850de497-d11c-49ed-99f0-56c55372a1bc
 
-<video src="skinning_demo2.mp4" controls title="Skinning emo 2"></video>
+https://github.com/mleonova/Graphics-Part2-Skinning/assets/30246711/e05d61c7-8a50-40da-9707-cd54dbd7dfeb
+
+
+
+
 
