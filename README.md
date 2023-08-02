@@ -76,7 +76,7 @@ bindings [numjoints]
 - [numtriangles] represents the number of triangles in the mesh.
 - The section contains a list of [numtriangles] lines, each line representing a triangle by specifying the indices of its three vertices in the mesh.
 
-### ```bindings [numjoints] matrix { [ax] [ay] [az] [bx] [by] [bz] [cx] [cy] [cz] [dx] [dy] [dz] } ...```
+#### ```bindings [numjoints] matrix { [ax] [ay] [az] [bx] [by] [bz] [cx] [cy] [cz] [dx] [dy] [dz] } ...```
 - This section defines the binding matrices for each joint in the skeleton.
 - [numjoints] represents the number of joints in the skeleton.
 - The section contains a list of [numjoints] binding matrices, each represented by a 3x4 matrix.
