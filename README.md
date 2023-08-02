@@ -81,3 +81,14 @@ bindings [numjoints]
 - [numjoints] represents the number of joints in the skeleton.
 - The section contains a list of [numjoints] binding matrices, each represented by a 3x4 matrix.
 - The matrix is represented as a set of 12 numbers [ax] [ay] [az] [bx] [by] [bz] [cx] [cy] [cz] [dx] [dy] [dz], which define the initial position and orientation of the joint relative to its parent joint. The matrix consists of three 3D vectors: [a], [b], and [c], representing the joint's local X, Y, and Z axes, respectively, and a 3D vector [d], representing the joint's initial position relative to its parent joint.
+
+## Process
+When the program loads a .skel file, it creates a skeleton by connecting joints, which represent the character's bones. The joints are arranged in a hierarchy, with parent and child relationships based on the information in the .skel file.
+
+To animate the character, the program uses a technique called "forward kinematics." It calculates how each joint should move in 3D space to create natural-looking animations. This involves computing transformation matrices for each joint, which describe the joint's position, rotation, and size relative to the world around it.
+
+The program then applies a "skinning algorithm" to deform the character's mesh (the skin) based on the movement of the skeleton. For each point on the mesh, the program calculates its new position by blending the transformations of the nearby joints. This blending is weighted by values assigned to each point, representing how much each joint influences the point's movement.
+
+After performing the skinning, the program renders the character's animated mesh, displaying the character in 3D with its updated shape. Additionally, the program still draws the character's skeleton using boxes, so you can see how the bones move and contribute to the character's animation.
+
+## Demo
