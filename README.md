@@ -56,3 +56,28 @@ bindings [numjoints]
 }
 ```
 
+#### ```positions [numverts] { [x] [y] [z] ... }```
+- This section defines the 3D coordinates (x, y, z) of the vertices of the character's mesh.
+- [numverts] represents the number of vertices in the mesh.
+- The section contains a list of [numverts] lines, each line representing the x, y, and z coordinates of a vertex in the mesh.
+
+#### ```normals [numverts] { [x] [y] [z] ... }```
+- This section defines the normals of the corresponding vertices in the mesh.
+
+#### ```skinweights [numverts] [numattachments] [joint0] [weight0] ... [jointN] [weightN] ...```
+- This section defines the skinning weights for each vertex in the mesh.
+- [numverts] represents the number of vertices in the mesh.
+- [numattachments] represents the number of joints attached to each vertex.
+- Each line in the section corresponds to a vertex and its associated skinning weights.
+- For each vertex, there are [numattachments] pairs of [joint] and [weight], where [joint] is the index of the joint (bone) in the skeleton, and [weight] is the weight of that joint's influence on the vertex. The sum of all weights for a vertex is typically equal to 1.
+
+#### ```triangles [numtriangles] { [vertex0] [vertex1] [vertex2] ... }```
+- This section defines the triangles that make up the character's mesh.
+- [numtriangles] represents the number of triangles in the mesh.
+- The section contains a list of [numtriangles] lines, each line representing a triangle by specifying the indices of its three vertices in the mesh.
+
+### ```bindings [numjoints] matrix { [ax] [ay] [az] [bx] [by] [bz] [cx] [cy] [cz] [dx] [dy] [dz] } ...```
+- This section defines the binding matrices for each joint in the skeleton.
+- [numjoints] represents the number of joints in the skeleton.
+- The section contains a list of [numjoints] binding matrices, each represented by a 3x4 matrix.
+- The matrix is represented as a set of 12 numbers [ax] [ay] [az] [bx] [by] [bz] [cx] [cy] [cz] [dx] [dy] [dz], which define the initial position and orientation of the joint relative to its parent joint. The matrix consists of three 3D vectors: [a], [b], and [c], representing the joint's local X, Y, and Z axes, respectively, and a 3D vector [d], representing the joint's initial position relative to its parent joint.
