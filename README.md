@@ -92,3 +92,5 @@ The program then applies a "skinning algorithm" to deform the character's mesh (
 After performing the skinning, the program renders the character's animated mesh, displaying the character in 3D with its updated shape. Additionally, the program still draws the character's skeleton using boxes, so you can see how the bones move and contribute to the character's animation.
 
 ## Demo
+
+
